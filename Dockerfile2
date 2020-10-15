@@ -1,0 +1,4 @@
+FROM ubuntu:latest
+
+ADD https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-5.4.62.tar.xz /linux-5.4.62.tar.xz
+ADD https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-5.4.8.tar.xz /linux-5.4.8.tar.xz
