@@ -4,6 +4,7 @@ The stack:
 
 - [registry](https://github.com/docker/distribution)
 - [minio](https://github.com/minio/)
+- [registry-cli](https://github.com/andrey-pohilko/registry-cli)
 
 ```
 $ docker-compose up -d
