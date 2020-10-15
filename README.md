@@ -51,7 +51,7 @@ $ du volumes -h -d0
 ```
 
 ```
-$ ./execute-garbase-collector.py
+$ ./execute-garbase-collector.sh
 ```
 
 ```
@@ -134,7 +134,7 @@ Image: ubuntu
 
 ```
 $ docker run --network docker-registry-playground --rm anoxis/registry-cli -r http://registry:5000 -i myimage --delete --tags-like "tag2"
-$ ./execute-garbase-collector.py
+$ ./execute-garbase-collector.sh
 ```
 
 ```
@@ -147,7 +147,7 @@ $ du ./volumes -h -d0
 $ docker build -f Dockerfile.scratch -t 127.0.0.1:5000/myimage:tag2 --build-arg tag="myimage:tag2"
 $ docker push 127.0.0.1:5000/myimage:tag2
 $ curl -X DELETE http://127.0.0.1:5000/v2/myimage/manifests/sha256:4434df0532b806765d5721ec6ff6a5a37f11febecdcaaa5b4ce474d8d81b0675
-$ ./execute-garbase-collector.py
+$ ./execute-garbase-collector.sh
 ```
 
 ```
